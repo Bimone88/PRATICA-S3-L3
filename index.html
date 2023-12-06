@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consegna TASK</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <main>
+      <form id="main-form">
+        <div class="coperchio">
+          <label for="first-Name"></label>
+          <input
+            id="first-Name"
+            placeholder="Nome personaggio"
+            minlength="2"
+            maxlength="20"
+          />
+        </div>
+
+        <button type="sumbit" onclick="addCharacter()">COMINCIA</button>
+        <!-- di default con sumbit la pagina si aggiorna
+           questo comportamento fa perdere il comportamento del form
+        quindi con JS la tolgo-->
+      </form>
+      <section id="Rubrica"></section>
+      <!-- qui dentro carte clienti -->
+      <button id="delete">Delete</button>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
